@@ -1,0 +1,23 @@
+# Original-Bildmaterial (gross, nicht von der Site verwendet)
+bildwelt/
+
+# unbenutzte / Zwischendateien
+*.bak
+manuel-leitner.png
+manuel-leitner-bg.png.bak
+hero-bg.jpg
+hero-refinery.jpg
+wallpaper-energy-consulting.jpg
+wallpaper-energy-consulting-center.jpg
+wallpaper-linkedin-header.jpg
+
+# experimentelle Demo-Seite (nicht öffentlich)
+leistungen-pro.html
+
+# System / Logs
+.DS_Store
+*.jsonl
+
+# interne Tool-Config / Test
+.claude/
+preview-nav.html

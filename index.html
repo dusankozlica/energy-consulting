@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Energy Consulting — Energie verstehen, Zukunft gestalten.</title>
+<meta name="description" content="Energy Consulting berät Unternehmen entlang der gesamten Energiewertschöpfungskette – strategisch, technisch und wirtschaftlich. Interaktive Analysen, Projekte und Energiekosten-Rechner." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Overpass+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=66" />
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Energy Consulting Startseite">
+      <img class="mark" src="logo-icon-white.png" alt="Energy Consulting Logo" />
+      <span class="name"><span>ENERGY</span><span>CONSULTING</span></span>
+    </a>
+    <nav class="menu" aria-label="Hauptnavigation">
+      <a href="index.html" class="is-active">Home</a>
+      <a href="leistungen.html">Leistungen</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="projekte.html">Projekte</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <button class="burger" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero__photo" aria-hidden="true"></div>
+  <div class="hero__veil" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero__inner">
+      <h1>
+        <span class="ln"><span>Energie verstehen,</span></span>
+        <span class="ln"><span class="grad-text">Zukunft gestalten.</span></span>
+      </h1>
+      <p class="lead">Wir begleiten Unternehmen entlang der gesamten Energiewertschöpfungskette – von der Analyse über die Strategie bis zur Umsetzung. Datenbasiert, technologieoffen und wirtschaftlich gedacht.</p>
+      <div class="hero__cta">
+        <a href="#rechner" class="btn">Einsparpotenzial berechnen <span class="arr" aria-hidden="true">→</span></a>
+        <a href="leistungen.html" class="btn btn--ghost">Unsere Leistungen</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- weisse Leistungs-Leiste — Teil des Heros -->
+  <div class="pillars" id="leistungen">
+    <div class="wrap pillars__grid">
+      <a class="pillar" href="leistungen.html#strategie">
+        <div class="pillar__ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="15"/><circle cx="24" cy="24" r="6"/><line x1="24" y1="3" x2="24" y2="11"/><line x1="24" y1="37" x2="24" y2="45"/><line x1="3" y1="24" x2="11" y2="24"/><line x1="37" y1="24" x2="45" y2="24"/></svg></div>
+        <h3>Strategie</h3>
+        <p>Wir entwickeln massgeschneiderte Strategien für Ihre Energiezukunft.</p>
+        <span class="pillar__arr" aria-hidden="true">→</span>
+      </a>
+      <a class="pillar" href="leistungen.html#analyse">
+        <div class="pillar__ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="30" width="6" height="11"/><rect x="17" y="22" width="6" height="19"/><rect x="28" y="26" width="6" height="15"/><polyline points="7,22 18,15 28,19 41,7"/><polyline points="34,7 41,7 41,14"/></svg></div>
+        <h3>Analyse</h3>
+        <p>Fundierte Analysen als Basis für tragfähige Entscheidungen.</p>
+        <span class="pillar__arr" aria-hidden="true">→</span>
+      </a>
+      <a class="pillar" href="leistungen.html#optimierung">
+        <div class="pillar__ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="6"/><path d="M24 6v5M24 37v5M6 24h5M37 24h5M11 11l3.5 3.5M33.5 33.5L37 37M37 11l-3.5 3.5M14.5 33.5L11 37"/><circle cx="24" cy="24" r="13"/></svg></div>
+        <h3>Optimierung</h3>
+        <p>Wir optimieren Prozesse, Systeme und Energiekosten nachhaltig.</p>
+        <span class="pillar__arr" aria-hidden="true">→</span>
+      </a>
+      <a class="pillar" href="leistungen.html#umsetzung">
+        <div class="pillar__ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="17" cy="16" r="6"/><circle cx="33" cy="18" r="5"/><path d="M6 40c0-7 5-12 11-12s11 5 11 12"/><path d="M28 40c0-6 3-10 7-10s7 4 7 10"/></svg></div>
+        <h3>Umsetzung</h3>
+        <p>Gemeinsam setzen wir Ihre Projekte erfolgreich und effizient um.</p>
+        <span class="pillar__arr" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- schwarzes Expertise-Band mit Kennzahlen rechts -->
+  <div class="expertise" id="ueber">
+    <div class="wrap expertise__grid">
+      <div class="expertise__lead">
+        <h2 class="expertise__title">Expertise, Erfahrung, Ergebnisse.</h2>
+        <p>Energy Consulting steht für unabhängige Beratung mit klarem Fokus auf wirtschaftliche, technische und ökologische Lösungen. Unser Team verbindet Ingenieurwissen mit Markt- und Regulierungsexpertise – herstellerneutral und ergebnisorientiert.</p>
+      </div>
+      <div class="expertise__figures">
+        <div class="ef"><span class="ef__n"><span data-count="15" data-suffix="+">0</span></span><span class="ef__t">Jahre<br>Erfahrung</span></div>
+        <div class="ef"><span class="ef__n"><span data-count="200" data-suffix="+">0</span></span><span class="ef__t">Erfolgreiche<br>Projekte</span></div>
+        <div class="ef"><span class="ef__n"><span data-count="30" data-suffix="+">0</span></span><span class="ef__t">Experten<br>im Team</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ ENERGIE IM WANDEL — Charts ============ -->
+<section class="section section--white section--img" id="markt">
+  <div class="sec-bg" style="background-image:url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1920&q=80')"></div>
+  <div class="sec-overlay"></div>
+  <div class="sec-corner"></div>
+  <div class="wrap">
+    <div class="sec-head reveal">      <h2>Der Markt verändert sich, wir machen ihn lesbar.</h2>
+      <hr class="accent" />
+      <p>Strompreise, Förderkulisse und Erzeugungsmix bewegen sich schneller denn je. Unsere Beratung übersetzt diese Dynamik in konkrete Handlungsoptionen – hier ein Blick auf zwei zentrale Kennzahlen.</p>
+    </div>
+    <div class="charts__grid">
+      <div class="chart-card glass reveal">
+        <div class="chart-head">
+          <div>
+            <h3>Strommix Schweiz</h3>
+            <p class="sub">Anteil an der inländischen Stromproduktion, 2010–2024</p>
+          </div>
+          <div class="tabs" role="tablist">
+            <button data-mix="erneuerbar" class="is-active">Erneuerbar</button>
+            <button data-mix="fossil">Fossil</button>
+          </div>
+        </div>
+        <div class="chart-card__canvas"><canvas id="chart-mix"></canvas></div>
+        <div class="chart-foot">Richtwerte zur Veranschaulichung · Quelle Branchenmittel</div>
+      </div>
+      <div class="chart-card glass reveal">
+        <div class="chart-head">
+          <div>
+            <h3>Einsparpotenzial nach Branche</h3>
+            <p class="sub">Typische Bandbreite identifizierter Effizienzpotenziale</p>
+          </div>
+        </div>
+        <div class="chart-card__canvas"><canvas id="chart-saving"></canvas></div>
+        <div class="chart-foot">Erfahrungswerte aus Energieaudits · branchenabhängig</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENERGIEKOSTEN-RECHNER ============ -->
+<section class="section section--light section--img" id="rechner">
+  <div class="sec-bg" style="background-image:url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1920&q=80')"></div>
+  <div class="sec-overlay"></div>
+  <div class="wrap">
+    <div class="sec-head reveal">      <h2>Energiekosten-Rechner</h2>
+      <hr class="accent" />
+      <p>Verschieben Sie die Regler und sehen Sie sofort, welche Grössenordnung an Einsparung und CO₂-Reduktion in Ihrem Betrieb realistisch ist. Eine erste Orientierung – die genaue Analyse machen wir gemeinsam.</p>
+    </div>
+
+    <div class="calc reveal" id="calc">
+      <div class="calc__controls glass">
+        <div class="field">
+          <label>Jahresverbrauch <span class="val" data-val="verbrauch">500'000 kWh</span></label>
+          <input type="range" id="in-verbrauch" min="50000" max="5000000" step="50000" value="500000" />
+        </div>
+        <div class="field">
+          <label>Strompreis <span class="val" data-val="preis">32 Rp.</span></label>
+          <input type="range" id="in-preis" min="10" max="60" step="1" value="32" />
+        </div>
+        <div class="field">
+          <label>Optimierungsgrad <span class="val" data-val="grad">30 %</span></label>
+          <input type="range" id="in-grad" min="5" max="45" step="1" value="30" />
+        </div>
+        <p class="calc__note">Der Optimierungsgrad beschreibt den Anteil der Energiekosten, der durch Effizienz, Lastmanagement und smarte Beschaffung adressierbar ist. In Audits identifizieren wir den für Sie passenden Wert.</p>
+      </div>
+
+      <div class="calc__result glass">
+        <!-- Hero-Zahl: Ersparnis -->
+        <div class="calc__hero">
+          <div class="calc__hero-label">Ersparnis pro Jahr</div>
+          <div class="calc__hero-num" data-out="ersparnis">CHF 48'000</div>
+          <div class="calc__hero-sub"><span data-out="pct">30</span> % Optimierungspotenzial</div>
+        </div>
+        <!-- 2×2 Metrik-Grid -->
+        <div class="calc__metrics">
+          <div class="calc__metric">
+            <div class="mk">Kosten heute</div>
+            <div class="mv" data-out="aktuell">CHF 160'000</div>
+          </div>
+          <div class="calc__metric">
+            <div class="mk">Nach Optimierung</div>
+            <div class="mv" data-out="optimiert">CHF 112'000</div>
+          </div>
+          <div class="calc__metric">
+            <div class="mk">CO₂-Reduktion / Jahr</div>
+            <div class="mv" data-out="co2">20 t</div>
+          </div>
+          <div class="calc__metric">
+            <div class="mk">Amortisation</div>
+            <div class="mv" data-out="amort">ca. 2–4 J.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROZESS ============ -->
+<section class="section section--alt section--grid-orb" id="vorgehen">
+  <div class="wrap proc-wrap">
+    <div class="proc-intro">
+      <h5 class="proc-eyebrow">Unser Vorgehen</h5>
+      <h2>In fünf Schritten zur <span class="accent-text">Lösung</span></h2>
+      <p>Ein strukturierter Prozess sorgt für Tempo und Verlässlichkeit – von der ersten Datenaufnahme bis zum laufenden Monitoring der Ergebnisse.</p>
+      <div class="proc-intro__img"><img src="foto-11.jpg" alt="Energieberatung – Planung am Schreibtisch" loading="lazy" /></div>
+    </div>
+    <div class="proc-stack">
+      <article class="proc-card" style="--i:0">
+        <div class="proc-card__head"><h3>Analyse</h3><span class="proc-no">01</span></div>
+        <p>Am Anfang steht eine belastbare Datengrundlage. Wir werten Lastgänge, Strom- und Gasrechnungen, Zählerdaten und bestehende Lieferverträge aus, erstellen eine erste CO₂-Bilanz und decken Lastspitzen sowie Effizienzverluste auf. So wird transparent, wo Ihr Unternehmen energetisch und wirtschaftlich tatsächlich steht.</p>
+      </article>
+      <article class="proc-card" style="--i:1">
+        <div class="proc-card__head"><h3>Strategie</h3><span class="proc-no">02</span></div>
+        <p>Aus der Analyse leiten wir konkrete Handlungsszenarien ab – von Effizienzmaßnahmen über Eigenerzeugung mit Photovoltaik und BHKW bis zur Strom- und Gasbeschaffung. Jede Maßnahme priorisieren wir nach Einsparpotenzial, Investitionshöhe und CO₂-Wirkung, damit Sie die wirtschaftlichsten Hebel zuerst angehen.</p>
+      </article>
+      <article class="proc-card" style="--i:2">
+        <div class="proc-card__head"><h3>Konzept</h3><span class="proc-no">03</span></div>
+        <p>Die ausgewählten Maßnahmen detaillieren wir zu einem umsetzbaren Fahrplan: technische Auslegung, Wirtschaftlichkeitsberechnung mit Amortisation und Rendite, Prüfung passender Förderprogramme und ein realistischer Zeitplan. Sie erhalten eine fundierte, herstellerneutrale Entscheidungsgrundlage.</p>
+      </article>
+      <article class="proc-card" style="--i:3">
+        <div class="proc-card__head"><h3>Umsetzung</h3><span class="proc-no">04</span></div>
+        <p>Wir begleiten die Realisierung von der Ausschreibung über die Steuerung der Gewerke bis zur Inbetriebnahme. Als unabhängige Berater prüfen wir Angebote technisch und kaufmännisch, wahren Ihre Interessen und sorgen für eine reibungslose, termin- und budgetgerechte Umsetzung.</p>
+      </article>
+      <article class="proc-card" style="--i:4">
+        <div class="proc-card__head"><h3>Monitoring</h3><span class="proc-no">05</span></div>
+        <p>Nach dem Go-live sichern wir den Erfolg ab: kontinuierliches Energiemonitoring, ein Soll-Ist-Abgleich der erzielten Einsparungen und regelmäßiges Reporting. So bleiben Effizienz, Kosten und CO₂-Emissionen dauerhaft im Blick – und werden Schritt für Schritt weiter optimiert.</p>
+      </article>
+      <div class="proc-spacer" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section section--alt section--grid testi">
+  <div class="wrap">
+    <div class="sec-head sec-head--center reveal">      <h2>Was Kunden über uns sagen</h2>
+      <hr class="accent" />
+    </div>
+
+    <div class="testi-grid reveal">
+
+      <!-- Linke Spalte: grosse Featured-Karte -->
+      <div class="testi-col">
+        <div class="testi-card glass">
+          <div class="testi-sector">Produzierendes Gewerbe</div>
+          <blockquote class="testi-quote">
+            <p>„Energy Consulting hat unsere Energiekosten nicht nur gesenkt, sondern uns einen verlässlichen Fahrplan für die nächsten zehn Jahre gegeben. Unabhängig, fundiert und immer auf Augenhöhe."</p>
+            <div class="testi-who">
+              <div class="testi-av">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=96&h=96&q=80" alt="" loading="lazy" />
+              </div>
+              <div>
+                <cite>Leitung Technik</cite>
+                <span>Produzierendes Gewerbe</span>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- Rechte Spalte: 1 breite + 2 kleine Karten -->
+      <div class="testi-col">
+
+        <!-- Breite Karte oben -->
+        <div class="testi-card glass">
+          <blockquote class="testi-quote">
+            <p>„Klare Analyse, pragmatische Empfehlungen und ein Team, das wirklich zuhört. Die Zusammenarbeit war auf jedem Level überzeugend."</p>
+            <div class="testi-who">
+              <div class="testi-av">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=96&h=96&q=80" alt="" loading="lazy" />
+              </div>
+              <div>
+                <cite>Leitung Operations</cite>
+                <span>Logistikbranche</span>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+
+        <!-- 2 kleine Karten nebeneinander -->
+        <div class="testi-row">
+          <div class="testi-card glass">
+            <blockquote class="testi-quote">
+              <p>„Strukturiert, transparent, ergebnisorientiert. Wir haben messbar eingespart."</p>
+              <div class="testi-who">
+                <div class="testi-av">
+                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=96&h=96&q=80" alt="" loading="lazy" />
+                </div>
+                <div>
+                  <cite>Werksleiter</cite>
+                  <span>Industrie</span>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <div class="testi-card glass">
+            <blockquote class="testi-quote">
+              <p>„Dank des PPA-Konzepts haben wir langfristige Preissicherheit gewonnen. Sehr empfehlenswert."</p>
+              <div class="testi-who">
+                <div class="testi-av">
+                  <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=96&h=96&q=80" alt="" loading="lazy" />
+                </div>
+                <div>
+                  <cite>Energiemanager</cite>
+                  <span>Chemiebranche</span>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKTBAND ============ -->
+<section class="section cta-people" id="kontakt">
+  <div class="cta-people__img">
+    <img src="foto-22.jpg" alt="Manuel Leitner im Beratungsgespräch" />
+  </div>
+  <div class="cta-people__veil"></div>
+  <div class="wrap">
+    <div class="cta-people__content">
+      <div class="cta-band reveal">
+        <div>          <h2 style="margin-top:16px">Sprechen wir über Ihr Energiekonzept.</h2>
+          <p>In einem unverbindlichen Erstgespräch loten wir gemeinsam aus, wo die grössten Hebel in Ihrem Betrieb liegen.</p>
+        </div>
+        <a href="kontakt.html" class="btn">Erstgespräch anfragen <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site foot--sticky">
+<div class="foot-pin">
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot__brand">
+        <a class="brand" href="index.html" aria-label="Energy Consulting Startseite">
+          <img class="mark" src="logo-icon-dark.png" alt="Energy Consulting Logo" style="height:40px" />
+          <span class="name"><span>ENERGY</span><span>CONSULTING</span></span>
+        </a>
+        <p class="foot-tagline">Energie verstehen,<br>Zukunft gestalten.</p>
+        <div class="foot-social">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="#" aria-label="Xing"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.643-.962-.643H3.648z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot__col">
+        <h4>Navigation</h4>
+        <a href="leistungen.html">Leistungen</a>
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="projekte.html">Projekte</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+      <div class="foot__col">
+        <h4>Kontakt</h4>
+        <a href="https://maps.google.com/?q=Bahnhofstrasse+6a+5210+Windisch" target="_blank" rel="noopener">Bahnhofstrasse 6a, 5210 Windisch</a>
+        <a href="tel:+41564848580">+41 56 484 85 80</a>
+        <a href="mailto:hello@energy-consulting.ch">hello@energy-consulting.ch</a>
+      </div>
+    </div>
+    <div class="foot__bottom">
+      <span>© 2026 Energy Consulting</span>
+      <span>Impressum · Datenschutz</span>
+    </div>
+  </div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="app.js?v=66"></script></body>
+</html>
