@@ -361,6 +361,42 @@ header.site.scrolled .brand .mark { height: 38px; }
 .section--white .glass h4, .section--light .glass h4 { color: var(--noir); }
 .section--white .glass p, .section--light .glass p { color: #555; }
 
+/* ── Premium-Hover für helle Service-Karten (Leistungen „4 Felder") ──
+   Lift + weiche Elevation + Icon-Kachel füllt sich rot + roter Akzentrahmen.
+   Snappy 220ms, transform-basiert (kein Layout-Reflow). */
+.section--light .card.glass,
+.section--white .card.glass {
+  transition: transform .22s var(--ease), box-shadow .22s var(--ease), border-color .22s var(--ease);
+  will-change: transform;
+}
+.section--light .card.glass:hover,
+.section--white .card.glass:hover {
+  transform: translateY(-7px);
+  border-color: rgba(227,6,19,0.40) !important;
+  box-shadow: 0 22px 46px -18px rgba(0,0,0,0.24), 0 6px 16px rgba(0,0,0,0.08) !important;
+}
+.section--light .card.glass .svc-ic,
+.section--white .card.glass .svc-ic {
+  transition: background .22s var(--ease), border-color .22s var(--ease),
+              color .22s var(--ease), transform .22s var(--ease);
+}
+.section--light .card.glass:hover .svc-ic,
+.section--white .card.glass:hover .svc-ic {
+  background: var(--rot);
+  border-color: var(--rot);
+  color: #fff;
+  transform: scale(1.08) rotate(-3deg);
+}
+.section--light .card.glass:hover h3,
+.section--white .card.glass:hover h3 { color: var(--rot) !important; }
+.section--light .card.glass:hover .meta,
+.section--white .card.glass:hover .meta { letter-spacing: 0.22em; transition: letter-spacing .22s var(--ease); }
+@media (prefers-reduced-motion: reduce) {
+  .section--light .card.glass, .section--white .card.glass,
+  .section--light .card.glass .svc-ic, .section--white .card.glass .svc-ic { transition: none; }
+  .section--light .card.glass:hover, .section--white .card.glass:hover { transform: none; }
+}
+
 /* Chart cards in light sections — clean Apple-style */
 .section--white .chart-card, .section--light .chart-card {
   background: #fff;
