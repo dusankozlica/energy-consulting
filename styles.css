@@ -1649,6 +1649,22 @@ footer.site {
 .foot__col a::after { background: var(--rot); }
 .foot__bottom { border-top-color: rgba(0,0,0,0.10); color: #8a8a90; }
 
+/* Grosse, ganz sanfte Logo-Silhouette als Wasserzeichen im weissen Footer */
+footer.site { overflow: hidden; }
+footer.site::after {
+  content: "";
+  position: absolute;
+  right: clamp(-50px, -1vw, 10px);
+  bottom: clamp(-70px, -3vw, -10px);
+  width: clamp(300px, 30vw, 520px);
+  aspect-ratio: 998 / 1171;
+  background: url('logo-silhouette.png') no-repeat center / contain;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 0;
+}
+.foot-pin { position: relative; z-index: 1; }
+
 /* Social-Icons — gebrandet mit rotem Hover + Lift */
 .foot-social a {
   border-color: rgba(0,0,0,0.14);
