@@ -1934,3 +1934,29 @@ footer.site .btn--ghost:hover .arr { transform: translateX(4px); }
 @media (max-width: 540px) {
   .testi-row { grid-template-columns: 1fr; }
 }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   EINHEITLICHER PREMIUM-HOVER für ALLE interaktiven Karten
+   (Projekt-, Kennzahlen-, Testimonial-, Chart-Karten — hell & dunkel)
+   Helle Service-/Werte-Karten haben ihre eigenen Detailregeln weiter oben.
+   ═══════════════════════════════════════════════════════════════ */
+.card.glass, .value.glass, .figure.glass, .testi-card.glass, .chart-card.glass {
+  transition: transform .22s var(--ease), box-shadow .22s var(--ease), border-color .22s var(--ease);
+  will-change: transform;
+}
+.card.glass:hover, .value.glass:hover, .figure.glass:hover,
+.testi-card.glass:hover, .chart-card.glass:hover {
+  transform: translateY(-7px);
+  border-color: rgba(227,6,19,0.45);
+}
+/* dunkle Karten: kräftiger Schatten + feiner Rot-Schimmer am Rand */
+.figure.glass:hover, .testi-card.glass:hover,
+.section:not(.section--light):not(.section--white) .card.glass:hover {
+  box-shadow: 0 24px 50px -18px rgba(0,0,0,0.6), 0 0 0 1px rgba(227,6,19,0.14);
+}
+@media (prefers-reduced-motion: reduce) {
+  .card.glass, .value.glass, .figure.glass, .testi-card.glass, .chart-card.glass { transition: none; }
+  .card.glass:hover, .value.glass:hover, .figure.glass:hover,
+  .testi-card.glass:hover, .chart-card.glass:hover { transform: none; }
+}
