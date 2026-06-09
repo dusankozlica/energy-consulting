@@ -942,6 +942,30 @@ form.ec select { appearance: none; background-image: linear-gradient(45deg, tran
 .value h3 { font-size: 1.02rem; letter-spacing: 0.05em; color: #fff; margin-bottom: 12px; }
 .value p { color: var(--txt-dim); font-size: 0.92rem; }
 
+/* ── Premium-Hover Werte-Karten (Lift + Elevation + Icon-Fill + Bild-Zoom) ── */
+.section--light .value.glass, .section--white .value.glass {
+  transition: transform .22s var(--ease), box-shadow .22s var(--ease), border-color .22s var(--ease);
+  will-change: transform;
+}
+.section--light .value.glass:hover, .section--white .value.glass:hover {
+  transform: translateY(-7px);
+  border-color: rgba(227,6,19,0.40) !important;
+  box-shadow: 0 22px 46px -18px rgba(0,0,0,0.24), 0 6px 16px rgba(0,0,0,0.08) !important;
+}
+.section--light .value.glass .ic, .section--white .value.glass .ic {
+  transition: background .22s var(--ease), border-color .22s var(--ease), color .22s var(--ease), transform .22s var(--ease);
+}
+.section--light .value.glass:hover .ic, .section--white .value.glass:hover .ic {
+  background: var(--rot); border-color: var(--rot); color: #fff; transform: scale(1.08) rotate(-3deg);
+}
+.section--light .value.glass:hover h3, .section--white .value.glass:hover h3 { color: var(--rot) !important; }
+.section--light .value.glass .value-img img, .section--white .value.glass .value-img img { transition: transform .5s var(--ease); }
+.section--light .value.glass:hover .value-img img, .section--white .value.glass:hover .value-img img { transform: scale(1.06); }
+@media (prefers-reduced-motion: reduce) {
+  .section--light .value.glass, .section--white .value.glass { transition: none; }
+  .section--light .value.glass:hover, .section--white .value.glass:hover { transform: none; }
+}
+
 .faq { max-width: 860px; margin-inline: auto; }
 .faq details { border-top: 1px solid var(--line); padding: 4px 0; }
 .faq details:last-child { border-bottom: 1px solid var(--line); }
